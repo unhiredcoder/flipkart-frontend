@@ -1,4 +1,4 @@
-export const URL = 'https://mushy-parka-bull.cyclic.app';
+export const URL = 'https://flipkart-chi.vercel.app';
 
 export const navData = [
     { url: 'https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100', text: 'Grocery' },

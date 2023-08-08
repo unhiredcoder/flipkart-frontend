@@ -15,6 +15,8 @@ import PaymentSuccess from './components/cart/PaymentSuccess';
 import PaymentFailed from './components/cart/PaymentFailed';
 import PrivateRoutes from './components/login/PrivateRoutes';
 import DashBoardApp from './dashboard/DashBoardApp';
+import './index.css'; // Import the CSS file
+
 
 
 
