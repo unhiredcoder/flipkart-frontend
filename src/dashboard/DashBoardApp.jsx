@@ -5,7 +5,6 @@ import ProductList from './ProductList'
 import UpdateProduct from './UpdateProduct'
 import UserList from './UserList'
 import { Route, Routes } from 'react-router-dom'
-import './DashBoardApp.css';
 import { URL as apiurl } from '../constants/data'
 
 export const URL = apiurl
