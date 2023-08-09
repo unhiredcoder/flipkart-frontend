@@ -9,19 +9,16 @@ import { URL as apiurl } from '../constants/data'
 
 export const URL = apiurl
 
-
 const DashBoardApp = () => {
     return (
         <>
-                <Nav />
-                <Routes>
-                    <Route>
-                        <Route index element={<ProductList />} />
-                        <Route path="add" element={<Addproduct />} />
-                        <Route path="users" element={<UserList />} />
-                        <Route path="update/:id" element={<UpdateProduct />} />
-                    </Route>
-                </Routes>
+            <Nav />
+            <Routes>
+                <Route path="/" element={<ProductList />} />
+                <Route path="add" element={<Addproduct />} />
+                <Route path="users" element={<UserList />} />
+                <Route path="update/:id" element={<UpdateProduct />} />
+            </Routes>
         </>
     )
 }
