@@ -127,13 +127,13 @@ const LoginDialog = ({ open, setOpen }) => {
   }, []);
 
   const { values, errors, touched, handleChange, handleSubmit } = useFormik({
-    initialValues: !showSignup ? LoginInitialValue :{ ...SignUpInitialValue, role: "admin" },
+    initialValues: !showSignup ? LoginInitialValue :{ ...SignUpInitialValue, role: "user" },
     validationSchema: !showSignup ? LoginSchema : SignupSchema,
     onSubmit: async (values, action) => {
       try {
         if (showSignup) {
           // Handle Signup
-          const signUpData = { ...values, role: "admin" };
+          const signUpData = { ...values, role: "user" };
           console.log("🚀 ~ file: loginDialog.jsx:132 ~ onSubmit: ~ values:", signUpData)
           const response = await authenticateSignUp(signUpData);
           console.log("getting", response);
